@@ -103,7 +103,7 @@ img {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
+   gap: var(--indent);
   align-items: center;
 }
 
@@ -707,7 +707,9 @@ img {
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
+  
 }
 
 .backdrop.is-hidden .modal {
@@ -717,7 +719,7 @@ img {
 .modal {
   position: absolute;
   top: 50%;
-
+ 
   left: 50%;
   display: flex;
   flex-direction: row-reverse;
