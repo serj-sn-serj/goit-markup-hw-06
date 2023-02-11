@@ -261,5 +261,6 @@
     "empty-lines-before-comment": 1,
     "empty-lines-after-comment": 1
   },
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "afterDelay",
+  "svg.preview.background": "editor"
 }

@@ -21,6 +21,7 @@
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <!-- body -->
+
   <body>
     <!-- header -->
     <header class="header-page">
@@ -345,34 +346,35 @@
             <li class="thumb-customers">
               <a class="customers-icon" href="#">
                 <svg width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo1"></use></svg></a
-            ></li>
+                  <use href="./images/icons.svg#icon-Logo1"></use> </svg></a>
+            </li>
             <li class="thumb-customers">
               <a class="customers-icon" href="#">
                 <svg width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo2"></use></svg></a
-            ></li>
+                  <use href="./images/icons.svg#icon-Logo2"></use> </svg></a>
+            </li>
             <li class="thumb-customers">
               <a class="customers-icon" href="#">
                 <svg width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo3"></use></svg></a
-            ></li>
+                  <use href="./images/icons.svg#icon-Logo3"></use></svg></a>
+            </li>
             <li class="thumb-customers">
               <a class="customers-icon" href="#">
                 <svg width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo4"></use></svg></a
-            ></li>
+                  <use href="./images/icons.svg#icon-Logo4"></use></svg></a>
+            </li>
             <li class="thumb-customers">
               <a class="customers-icon" href="#">
                 <svg width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo5"></use></svg></a
-            ></li>
+                  <use href="./images/icons.svg#icon-Logo5"></use></svg></a>
+            </li>
             <li class="thumb-customers">
               <a class="customers-icon" href="#">
                 <svg width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo6"></use></svg></a
-            ></li> </ul
-        ></div>
+                  <use href="./images/icons.svg#icon-Logo6"></use></svg></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- footer -->
@@ -387,6 +389,7 @@
             growth solutions.
           </p>
         </div>
+        <!-- social footer -->
         <div class="social-media">
           <p class="social-text">Social Media</p>
           <ul class="social-list-footer">
@@ -428,20 +431,80 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg></a
-            ></li>
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg></a>
+            </li>
           </ul>
         </div>
+        <!-- form footer -->
+        <form class="form-footer">
+          <div
+            ><label class="email-form-label">
+              Subscribe <input class="email-form-input" type="email" placeholder="E-mail" /></label
+          ></div>
+          <div class="footer-btn"
+            ><button class="btn footer-form-btn" type="submit"
+              >Subscribe
+              <svg class="footer-form-logo" width="24" height="20">
+                <use href="./images/symbol-subscribe.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <!-- modal form -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-btn" data-modal-close type="button">
-          <svg width="8" height="8">
-            <use href="./images/symbol-defs.svg#icon-close-btn-modal"></use>
-          </svg>
-        </button>
+        <div class="close-btn-thumb">
+          <button class="close-btn" data-modal-close type="button">
+            <svg width="8" height="8">
+              <use href="./images/symbol-defs.svg#icon-close-btn-modal"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- form modal group -->
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <form class="order-form">
+          <label class="order-form-label" for="user_name">Name</label>
+          <div class="order-form-group" role="group">
+            <input class="order-form-field" id="user_name" name="user_name" type="text" />
+            <svg class="order-form-icon" width="18" height="24">
+              <use href="./images/symbol-modal.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_phone">Phone</label>
+          <div class="order-form-group" role="group">
+            <input class="order-form-field" id="user_phone" name="user_phone" type="tel" />
+            <svg class="order-form-icon" width="18" height="24">
+              <use href="./images/symbol-modal.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="order-form-label" for="user_mail">Email</label>
+          <div class="order-form-group" role="group">
+            <input class="order-form-field" id="user_mail" name="user_mail" type="email" />
+            <svg class="order-form-icon" width="18" height="24">
+              <use href="./images/symbol-modal.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="order-form-label">Comment</label>
+          <textarea
+            class="order-form-comment"
+            id="comment"
+            name="comment"
+            rows="6"
+            placeholder="Text input"
+          ></textarea>
+          <label class="order-form-agreement">
+            <input class="order-form-checkbox" type="checkbox" />
+            <span class="txt-checkbox">
+              I accept the terms and conditions of the
+              <a class="order-form-link" href="#">Privacy Policy</a></span
+            >
+          </label>
+          <div class="btn-form" role="group">
+            <button class="btn btn-modal-form" type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
