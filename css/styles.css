@@ -323,7 +323,7 @@ textarea {
   height: 112px;
   margin-bottom: 8px;
   border-radius: 4px;
-  background: #f4f4fd;
+  background:var(--color-btn-filter);
 }
 
 .svg-features {
